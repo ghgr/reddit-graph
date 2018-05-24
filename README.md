@@ -6,4 +6,6 @@ The size of each node (each subreddit) is proportional to the logarithm of the n
 
 You can view the graph at [https://ghgr.github.io/reddit-graph/](https://ghgr.github.io/reddit-graph/). This graph is SFW, since it's text-only, and the NSFW words are located in the bottom half (more or less, it's interesting the gradient from "clearly NSFW" to "somewhat NSFW", to "maybe SFW", to "obviously SFW, like /r/askhistorians").
 
+You can direcly go to a node by using the search field in the top bar.
+
 WARNING: It takes around 2 minutes to load, and in the meantime the tab might freeze. After that it should work smoothly.

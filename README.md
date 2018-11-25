@@ -1,3 +1,5 @@
+**WARNING: The graph takes around 2 minutes to load, and in the meantime the tab might freeze. After that it should work smoothly.**
+
 Reddit communities -called subreddits- often link in their description to other similar themed communities. This description is often free text, but with a little bit of regex one can reliably extract the name of subreddits (mostly in the form */r/<subreddit_name>*, but also */r/<subreddit_name>+<subreddit_name>+<subreddit_name>*... ).
 
 As a fun one-day project I started from /r/nsfw, and *recursively* scraped the names of similar subreddits, to see what came. I was expecting something like 30 or 40 communities, and to plot them with matplotlib. Well... I got over *50 thousand* nodes. I scraped the data with PRAW, a Python wrapper for the Reddit API. The data was loaded into [Gephi](https://gephi.org), and finally exported as an interactive website with [gexf-js](https://github.com/raphv/gexf-js). For a moment I though I was going to crawl every existing subreddit, but this dataset (all subreddits that are reachable as 'related communities' starting from */r/nsfw*) only represents less than 5% of the total subreddits.
